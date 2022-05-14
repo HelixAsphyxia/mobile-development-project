@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DDD6C6"
     tools:context=".QuestionsList">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -19,6 +20,7 @@
         app:srcCompat="@android:drawable/ic_menu_add" />
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="266dp"
         android:layout_height="486dp"
         android:layout_marginStart="72dp"
@@ -35,8 +37,10 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="casual"
             android:text="Questions"
             android:textAlignment="center"
+            android:textColor="#795548"
             android:textSize="24sp" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -46,5 +50,53 @@
             android:scrollbars="vertical" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="118dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        app:srcCompat="@drawable/navidad" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="139dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/navidad__1_" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="110dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/jardinero" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/romero" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
