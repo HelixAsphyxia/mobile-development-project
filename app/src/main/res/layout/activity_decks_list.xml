@@ -15,11 +15,13 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="40dp"
         android:clickable="true"
-        android:contentDescription="Create new deck"
+        android:contentDescription="@string/btnCreate"
         android:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_add" />
+        app:srcCompat="@android:drawable/ic_menu_add"
+        tools:ignore="ImageContrastCheck"
+        android:focusable="true" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -50,77 +52,89 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="56dp"
         android:fontFamily="casual"
-        android:text="     Decks"
+        android:hint="@string/textViewDecks"
         android:textAlignment="center"
         android:textColor="#795548"
+        android:textColorHint="#D84315"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="55dp"
         android:layout_height="58dp"
+        android:contentDescription="@string/imageView4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.362"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/pregunta" />
+        app:srcCompat="@drawable/pregunta"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="Nota: Nunca estudies de ultimo momento, planifica tus estudios y usa nuestra app ;)"
-        android:textSize="10sp"
+        android:hint="@string/textView6"
+        android:textColor="#795548"
+        android:textColorHint="#795548"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintVertical_bias="0.995" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="111dp"
         android:layout_height="107dp"
+        android:contentDescription="@string/imageView14"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/guirnalda" />
+        app:srcCompat="@drawable/guirnalda"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="111dp"
         android:layout_height="107dp"
+        android:contentDescription="@string/imageView15"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/guirnalda__1_" />
+        app:srcCompat="@drawable/guirnalda__1_"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/imageView16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.933"
-        app:srcCompat="@drawable/decoracion" />
+        app:srcCompat="@drawable/decoracion"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
