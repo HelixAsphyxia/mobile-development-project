@@ -26,6 +26,7 @@
             android:id="@+id/imageView"
             android:layout_width="175dp"
             android:layout_height="263dp"
+            android:contentDescription="@string/imageView"
             app:srcCompat="@drawable/icon_g9bb32bb61_640" />
 
         <TextView
@@ -33,9 +34,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Name"
+            android:hint="@string/textView5"
             android:textAlignment="center"
-            android:textColor="#795548" />
+            android:textColor="#795548"
+            android:textColorHint="#795548" />
 
         <EditText
             android:id="@+id/txt_name"
@@ -43,21 +45,23 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="casual"
-            android:hint="How should we call you?"
+            android:hint="@string/txt_nameConfiguration"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:textAlignment="center"
             android:textColor="#795548"
-            android:textColorHint="#795548" />
+            android:textColorHint="#795548"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="How do we show you questions?"
+            android:hint="@string/textView4"
             android:textAlignment="center"
-            android:textColor="#795548" />
+            android:textColor="#795548"
+            android:textColorHint="#795548" />
 
         <Spinner
             android:id="@+id/spin_order"
@@ -71,8 +75,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Save"
-            android:textColor="#795548" />
+            android:hint="@string/btnSave"
+            android:textColor="#4E342E"
+            android:textColorHint="#4E342E" />
 
     </LinearLayout>
 
@@ -80,6 +85,7 @@
         android:id="@+id/imageView5"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintHorizontal_bias="0.009"
@@ -92,6 +98,7 @@
         android:id="@+id/imageView9"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.987"
@@ -104,6 +111,7 @@
         android:id="@+id/imageView8"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.987"
@@ -116,6 +124,7 @@
         android:id="@+id/imageView7"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.009"
