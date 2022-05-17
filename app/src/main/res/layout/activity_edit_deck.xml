@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Deck"
+            android:hint="@string/textView2"
             android:textAlignment="center"
             android:textColor="#795548"
             android:textColorHint="#795548"
@@ -40,10 +40,11 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="casual"
-            android:hint="Name"
+            android:hint="@string/txtQuestion"
             android:inputType="textPersonName"
             android:textColorHint="#795548"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/txt_description"
@@ -52,21 +53,24 @@
             android:ems="10"
             android:fontFamily="casual"
             android:gravity="start|top"
-            android:hint="What is this deck for ..."
+            android:hint="@string/txtDescription"
             android:inputType="textMultiLine"
-            android:textColorHint="#795548" />
+            android:textColorHint="#795548"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/btn_toQuestions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edit questions"
+            android:hint="@string/btnQuestion"
+            android:textColorHint="#795548"
             android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="140dp"
             android:layout_height="151dp"
+            android:contentDescription="@string/imageView6"
             app:srcCompat="@drawable/pregunta__1_" />
 
     </LinearLayout>
@@ -78,10 +82,12 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="52dp"
         android:clickable="true"
+        android:contentDescription="@string/btnCreate"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_menu_send"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_delete"
@@ -90,6 +96,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="52dp"
         android:clickable="true"
+        android:contentDescription="@string/btnDelete"
         android:focusable="true"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,6 +108,7 @@
         android:id="@+id/imageView10"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
@@ -113,6 +121,7 @@
         android:id="@+id/imageView11"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
@@ -125,6 +134,7 @@
         android:id="@+id/imageView12"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.984"
@@ -137,6 +147,7 @@
         android:id="@+id/imageView13"
         android:layout_width="82dp"
         android:layout_height="92dp"
+        android:contentDescription="@string/imageView13"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.982"
